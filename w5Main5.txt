@@ -1,0 +1,23 @@
+﻿start
+
+:user input (성적);
+
+if (90<성적) then
+    :return A;
+
+else if(80<성적<90) then
+    :return B;
+    
+else if(70<성적<80) then
+    :return C;
+    
+else if(60<성적<70) then
+    :return D;
+
+else
+:return F;
+endif
+
+:print grade;
+
+stop
