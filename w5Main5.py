@@ -1,7 +1,4 @@
-﻿markTemp = raw_input("insert marks (0~100): ")
-marks = float(markTemp)
-
-def computeGrade(marks):
+﻿def computeGrade(marks):
     if(90<=marks and marks<=100):
         grade = 'A'
     elif(80<=marks and marks<90):
@@ -14,4 +11,11 @@ def computeGrade(marks):
         grade = 'F'
     return grade
 
-computeGrade(marks)
+def lab1():
+    markTemp = raw_input("insert marks (0~100): ")
+    marks = float(markTemp)
+    myGrade = computeGrade(marks)
+    print myGrade
+    
+def main():
+    lab1()
