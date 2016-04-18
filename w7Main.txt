@@ -1,4 +1,4 @@
-﻿def drawSquareAt(size,pos):
+﻿def drawSquareAtSave(size,pos):
     tracks=list()
     t1.penup()
     t1.goto(pos)
@@ -10,7 +10,7 @@
     return tracks
 
 def lab5():
-	drawSquareAt(100,(100,100))
+	drawSquareAtSave(100,(100,100))
 
 def main():
 	lab7()
