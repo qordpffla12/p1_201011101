@@ -9,9 +9,26 @@
         tracks.append(t1.pos())
     return tracks
 
-def lab5():
+def drawSquareFrom(tracks):
+    t1.penup()
+    t1.goto(tracks[0])
+    t1.pendown()
+    t1.goto(tracks[1])
+    t1.goto(tracks[2])
+    t1.goto(tracks[3])
+    t1.goto(tracks[0])
+    
+
+def lab7():
 	drawSquareAtSave(100,(100,100))
 
+	x1=list()
+	x1.append((0,0))
+	x1.append((100,0))
+	x1.append((100,100))
+	x1.append((0,100))
+
+	drawSquareFrom(x1)
 def main():
 	lab7()
 
