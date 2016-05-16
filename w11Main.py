@@ -1,6 +1,8 @@
 ﻿import turtle
 wn=turtle.Screen()
 t1=turtle.Turtle()
+line=turtle.Turtle()
+wn.bgpic("myMaze.gif")
 
 def keyup():
     t1.fd(50)
@@ -13,6 +15,7 @@ def keyleft():
 
 def mousegoto(x,y):
     t1.setpos(x,y)
+
 def isArrived(x,y):
     t1.setpos(x,y)
     if t1.xcor()>=0 and t1.xcor()<=100 and t1.ycor()==0:
@@ -29,7 +32,10 @@ def addMouse():
     wn.onclick(isArrived)
 
 def lab11():
-    t1.goto(100,0)
+    line.goto(100,0)
+    t1.penup()
+    t1.goto(-350, 350)
+    t1.pendown()
     addKeys()
     addMouse()
     wn.listen()
